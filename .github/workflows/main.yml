@@ -1,1 +1,16 @@
-#Team workflow
+#Collaborative Workflow
+name: #Collaborative Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    update_html_and_readme:
+      runs-on: ubuntu-latest
+
+      steps:
+        # Step 1: Checkout repo
+        - name: Checkout Repository
+          uses: actions/checkout@v3
