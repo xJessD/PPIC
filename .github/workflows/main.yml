@@ -25,7 +25,7 @@ jobs:
 
         # Step 3: Update README
         - name: Update README
-          run:
+          run: |
             echo "### Updated by ${{ github.actor }} on $(date '+%Y-%m-%d %H:%M:%S') [Commit: $(git rev-parse --short HEAD)]" >> README.md
 
         # Step 4: Commit changes back to the repository
